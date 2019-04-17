@@ -8,7 +8,7 @@ public class BeanBoyController : MonoBehaviour
     [HideInInspector]
     public bool facingRight = true;
     [HideInInspector]
-    public bool jump = true;
+    public bool jump = false;
 
     public float moveForce = 365f;
 
@@ -22,20 +22,20 @@ public class BeanBoyController : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rigidbody2D;
 
-    void Awake()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1
             << LayerMask.NameToLayer("Ground"));
 
 
-        if (Input.GetButtonDown("Jump") && grounded == true)
+        if (Input.GetButtonDown("Jump") == true && grounded == true)
         {
             jump = true;
 
@@ -69,7 +69,7 @@ public class BeanBoyController : MonoBehaviour
 
         }
 
-        else if (horizontalAxis > 0 && facingRight == true)
+        else if (horizontalAxis < 0 && facingRight == true)
         {
             Flip();
         }
