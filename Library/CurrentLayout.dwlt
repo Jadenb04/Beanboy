@@ -67,15 +67,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 533
-    width: 1535
-    height: 414
-=======
     y: 552
     width: 1522
     height: 379
->>>>>>> 5089cb1c1cdcf0a27c17be364a642956e07be923
   m_MinSize: {x: 436, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
