@@ -8,7 +8,7 @@ public class BeanBoyController : MonoBehaviour
     [HideInInspector]
     public bool facingRight = true;
     [HideInInspector]
-    public bool jump = true;
+    public bool jump = false;
 
     public float moveForce = 365f;
 
