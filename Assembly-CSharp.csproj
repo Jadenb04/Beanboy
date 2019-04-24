@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BeanBoyController.cs" />
+    <Compile Include="Assets\Scripts\PlatformFall.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Owner/Desktop/School/Coding/Beanboy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
