@@ -32,7 +32,7 @@ public class BeanBoyController : MonoBehaviour
     private void Update()
     {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1
-            << LayerMask.NameToLayer("Ground"));
+            << LayerMask.NameToLayer("FallingFloor"));
 
 
         if (Input.GetButtonDown("Jump") == true && grounded == true)
