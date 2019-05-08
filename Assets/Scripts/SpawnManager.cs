@@ -7,10 +7,6 @@ public class SpawnManager : MonoBehaviour
     public GameObject platform;
 
 
-
-
-
-
     public float horizontalMin = 6.5f;
     public float horizontalMax = 14f;
 
@@ -19,9 +15,6 @@ public class SpawnManager : MonoBehaviour
     public float verticalMax = 6f;
 
     private Vector2 originPosition;
-
-
-    
     
     
     
